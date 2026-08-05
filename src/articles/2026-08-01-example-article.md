@@ -2,6 +2,7 @@
 title: "An example article: what goes where"
 date: 2026-08-01
 summary: "A placeholder article showing the format — front matter at the top, Markdown below. Delete me when you publish your first real piece."
+category: Primer
 ---
 
 This is a placeholder article so you can see how publishing works. Every

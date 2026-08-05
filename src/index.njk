@@ -11,7 +11,9 @@ layout: base.njk
     {% for article in collections.articles %}
     <li>
       <a class="article-list-title" href="{{ article.url }}">{{ article.data.title }}</a>
-      <time class="article-list-date" datetime="{{ article.date | isoDate }}">{{ article.date | readableDate }}</time>
+      <div class="article-list-meta">
+  <time class="article-list-date" datetime="{{ article.date | isoDate }}">{{ article.date | readableDate }}</time>
+  {% if article.data.category %}<span class="article-list-category">{{ article.data.category }}</span>{% endif %}</div>
       {% if article.data.summary %}<p class="article-list-summary">{{ article.data.summary }}</p>{% endif %}
     </li>
     {% endfor %}

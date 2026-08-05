@@ -2,6 +2,7 @@
 title: "Hot, Light, Cheap: Pick Three"
 date: 2026-07-25
 summary: "My takeaway from Farnborough 2026. Where are the production ceramic composites?"
+category: Perspective
 ---
 
 ![F-35B Lightning II hovering in flight. UK MOD © Crown copyright 2021](/assets/f35.jpg)
