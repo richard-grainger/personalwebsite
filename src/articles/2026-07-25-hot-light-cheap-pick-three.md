@@ -1,10 +1,10 @@
 ---
 title: "Hot, Light, Cheap: Pick Three"
-date: 2026-08-05
-summary: "Two articles make the homepage list look like a list. This one exists purely for that reason."
+date: 2026-07-25
+summary: "My takeaway from Farnborough 2026. Where are the production ceramic composites?"
 ---
 
-![F35 hovering in flight](assets\f35.jpg)
+![F-35B Lightning II hovering in flight. UK MOD © Crown copyright 2021](/assets/f35.jpg)
 
 Standing on the grass at Farnborough airshow with a friend from the National Composites Centre, I watched an F-35 hover on its own exhaust. It is an astonishing thing to see. One of the most advanced aircraft ever built, hanging on a column of air, and yet the conversation between us was the same conversation composites engineers have been having for twenty years. Ceramic matrix composites are the future of the hot section. They were the future when I was a student. They were the future when my friend was a student. So why does it never quite arrive?
 
