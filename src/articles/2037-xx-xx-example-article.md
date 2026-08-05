@@ -1,6 +1,6 @@
 ---
 title: "An example article: what goes where"
-date: 2026-08-01
+date: 2037-08-01
 summary: "A placeholder article showing the format — front matter at the top, Markdown below. Delete me when you publish your first real piece."
 category: Primer
 ---
