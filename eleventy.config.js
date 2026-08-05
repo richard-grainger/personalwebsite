@@ -4,7 +4,7 @@
 export default function (eleventyConfig) {
   // Copy the stylesheet straight through to the built site.
   eleventyConfig.addPassthroughCopy("src/css");
-
+  eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   // "articles" collection: every Markdown file in src/articles, newest first.
   // Articles dated in the future are excluded from the build, so you can
   // commit pieces ahead of time and they'll appear once their date arrives

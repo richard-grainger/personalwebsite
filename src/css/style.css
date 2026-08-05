@@ -1,206 +1,330 @@
 /* ==========================================================================
-   VISUAL IDENTITY — edit this top block and the whole site follows.
-   Everything below the tokens is layout plumbing you can mostly ignore.
+   Dr Richard Grainger — personal site
+   Direction: "Lab Notebook" — cool neutrals, monospace metadata, RG stamp,
+   clean paper (no texture). Journal-style figure treatment for images.
+   Fonts: IBM Plex Sans (text) + IBM Plex Mono (metadata, code).
    ========================================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap");
 
 :root {
-  /* ---- Colour -------------------------------------------------------- */
-  --color-background: #fdfdfb;   /* page background */
-  --color-text:       #1c1c1c;   /* body text */
-  --color-muted:      #6b6b64;   /* dates, footer, secondary text */
-  --color-accent:     #305d74;   /* links, site name — your "brand" colour */
-  --color-accent-hover: #1e3d4e; /* links on hover */
-  --color-rule:       #e4e2da;   /* thin divider lines */
-
-  /* ---- Type ---------------------------------------------------------- */
-  /* Swap these stacks to change the feel of the whole site.
-     Serif reads "printed essay"; a sans stack reads more corporate. */
-  --font-body:    Charter, Georgia, "Times New Roman", serif;
-  --font-heading: Charter, Georgia, "Times New Roman", serif;
-  --font-size-base: 1.125rem;    /* body text size (18px) */
-  --line-height-base: 1.65;
-
-  /* ---- Layout -------------------------------------------------------- */
-  --measure: 42rem;              /* max text column width (~70 characters) */
-  --space-1: 0.5rem;
-  --space-2: 1rem;
-  --space-3: 2rem;
-  --space-4: 3.5rem;
+  --paper: #f7f8f8;
+  --ink: #1a1e22;
+  --ink-soft: #33383d;
+  --ink-muted: #5d646b;
+  --ink-faint: #7a828a;
+  --rule: #dde1e4;
+  --panel: #eef1f3;
+  --chip: #e8ecef;
+  --accent: #1f5f9e;
+  --sans: "IBM Plex Sans", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
 }
 
-/* ==========================================================================
-   Base
-   ========================================================================== */
+/* --- Base ----------------------------------------------------------- */
 
 * { box-sizing: border-box; }
 
-html {
-  font-family: var(--font-body);
-  font-size: var(--font-size-base);
-  line-height: var(--line-height-base);
-  color: var(--color-text);
-  background: var(--color-background);
-}
-
 body {
   margin: 0 auto;
-  padding: var(--space-3) var(--space-2) var(--space-4);
-  max-width: var(--measure);
+  padding: 0 24px;
+  max-width: 760px;
+  background: var(--paper);
+  color: var(--ink-soft);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4 {
-  font-family: var(--font-heading);
-  line-height: 1.25;
-  margin: var(--space-3) 0 var(--space-1);
-}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
-h1 { font-size: 1.9rem; }
-h2 { font-size: 1.4rem; }
-h3 { font-size: 1.15rem; }
-
-a {
-  color: var(--color-accent);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 2px;
-}
-
-a:hover { color: var(--color-accent-hover); }
-
-blockquote {
-  margin: var(--space-2) 0;
-  padding-left: var(--space-2);
-  border-left: 3px solid var(--color-rule);
-  color: var(--color-muted);
-}
-
-code {
-  font-family: ui-monospace, "SF Mono", Consolas, monospace;
-  font-size: 0.9em;
-  background: rgba(0, 0, 0, 0.045);
-  padding: 0.1em 0.3em;
-  border-radius: 3px;
-}
-
-img { max-width: 100%; height: auto; }
-
-hr {
-  border: none;
-  border-top: 1px solid var(--color-rule);
-  margin: var(--space-3) 0;
-}
-
-/* ==========================================================================
-   Header / navigation
-   ========================================================================== */
-
-.site-header {
-  margin-bottom: var(--space-4);
-  padding-bottom: var(--space-2);
-  border-bottom: 1px solid var(--color-rule);
-}
-
-.site-name {
-  font-family: var(--font-heading);
-  font-size: 1.35rem;
-  font-weight: 700;
-  color: var(--color-text);
-  text-decoration: none;
-}
-
-.site-name:hover { color: var(--color-accent); }
-
-.site-subtitle {
-  margin: 0.15rem 0 var(--space-1);
-  color: var(--color-muted);
-  font-size: 0.95rem;
-}
-
-.site-nav { font-size: 0.95rem; }
-
-.site-nav a {
-  margin-right: var(--space-2);
-  color: var(--color-muted);
-  text-decoration: none;
-}
-
-.site-nav a:hover { color: var(--color-accent); }
-
-/* ==========================================================================
-   Homepage: intro + article list
-   ========================================================================== */
-
-.intro {
-  margin-bottom: var(--space-3);
-  font-size: 1.05em;
-}
-
-.article-list ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.article-list li {
-  margin-bottom: var(--space-3);
-  padding-bottom: var(--space-2);
-  border-bottom: 1px solid var(--color-rule);
-}
-
-.article-list li:last-child { border-bottom: none; }
-
-.article-list-title {
-  display: block;
-  font-family: var(--font-heading);
-  font-size: 1.25rem;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.article-list-date {
-  display: block;
-  margin-top: 0.2rem;
-  color: var(--color-muted);
-  font-size: 0.85rem;
-}
-
-.article-list-summary {
-  margin: var(--space-1) 0 0;
-  color: var(--color-text);
-}
-
-/* ==========================================================================
-   Article pages
-   ========================================================================== */
-
-.article-header { margin-bottom: var(--space-3); }
-
-.article-header h1 { margin-top: 0; }
-
-.article-meta {
-  margin: 0.3rem 0 0;
-  color: var(--color-muted);
-  font-size: 0.9rem;
-}
-
-/* ==========================================================================
-   Footer & utilities
-   ========================================================================== */
-
-.site-footer {
-  margin-top: var(--space-4);
-  padding-top: var(--space-2);
-  border-top: 1px solid var(--color-rule);
-  color: var(--color-muted);
-  font-size: 0.85rem;
-}
-
-.site-footer a { color: var(--color-muted); }
+::selection { background: var(--accent); color: #fff; }
 
 .visually-hidden {
   position: absolute;
-  width: 1px;
-  height: 1px;
+  width: 1px; height: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
   white-space: nowrap;
+}
+
+/* --- Header ----------------------------------------------------------
+   Layout: [RG stamp + name .......... nav]
+           [// subtitle                   ]
+           ================================  (2px ink rule)            */
+
+.site-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: baseline;
+  padding: 44px 0 0;
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 26px;
+}
+
+.site-name {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+.site-name:hover { text-decoration: none; }
+
+/* The RG maker's stamp */
+.site-name::before {
+  content: "RG";
+  flex: none;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid var(--ink);
+  font: 500 15px var(--mono);
+  color: var(--ink);
+}
+
+.site-subtitle {
+  grid-row: 2;
+  margin: 6px 0 0;
+  font: 400 14px var(--mono);
+  color: var(--accent);
+}
+.site-subtitle::before { content: "// "; }
+
+.site-nav {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  gap: 22px;
+  font: 500 13.5px var(--mono);
+}
+.site-nav a { color: var(--ink); }
+.site-nav a:hover {
+  text-decoration: none;
+  box-shadow: inset 0 -2px 0 var(--accent);
+}
+
+/* --- Homepage --------------------------------------------------------- */
+
+.intro { max-width: 540px; }
+.intro p {
+  margin: 36px 0 0;
+  font-size: 16px;
+  color: var(--ink-muted);
+}
+
+.article-list { margin-top: 8px; }
+.article-list ul { list-style: none; margin: 0; padding: 0; }
+
+.article-list li {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  column-gap: 20px;
+  padding: 24px 0;
+}
+.article-list li + li { border-top: 1px solid var(--rule); }
+
+.article-list-date {
+  grid-column: 1;
+  grid-row: 1;
+  padding-top: 4px;
+  font: 400 13px/1.5 var(--mono);
+  color: var(--ink-faint);
+}
+
+.article-list-title {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--ink);
+}
+.article-list-title:hover { color: var(--accent); text-decoration: none; }
+
+.article-list-summary {
+  grid-column: 2;
+  margin: 6px 0 0;
+  font-size: 15px;
+  color: var(--ink-muted);
+}
+
+/* --- Article pages ---------------------------------------------------- */
+
+.article-header { margin: 44px 0 0; }
+
+.article-header h1 {
+  margin: 10px 0 0;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+.article-meta {
+  margin: 0;
+  font: 400 13px var(--mono);
+  color: var(--accent);
+  order: -1; /* header is not flex; kept for clarity — meta sits above h1 in layout below */
+}
+
+/* Put the date line above the title, readout-style */
+.article-header { display: flex; flex-direction: column; }
+.article-header h1 { order: 2; }
+.article-meta { order: 1; }
+
+.article > p:first-of-type { margin-top: 28px; }
+
+/* Section headings — mono "§" index lines */
+.article h2 {
+  margin: 34px 0 0;
+  font: 500 13px var(--mono);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.article h2::before { content: "§ "; }
+
+.article h3 {
+  margin: 26px 0 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.article p { margin: 12px 0 0; }
+.article p + p { margin-top: 14px; }
+
+.article ul, .article ol { margin: 14px 0 0; padding-left: 26px; }
+.article li { margin-top: 6px; }
+.article li::marker { color: var(--accent); font-family: var(--mono); font-size: 14px; }
+
+.article blockquote {
+  margin: 24px 0 0;
+  padding: 14px 20px;
+  background: var(--panel);
+  border-left: 3px solid var(--accent);
+  color: var(--ink-muted);
+  font-size: 15.5px;
+}
+.article blockquote p { margin: 0; }
+.article blockquote p + p { margin-top: 10px; }
+
+.article code {
+  font: 400 0.85em var(--mono);
+  background: var(--chip);
+  color: var(--ink);
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+
+.article pre {
+  margin: 24px 0 0;
+  padding: 16px 20px;
+  background: var(--ink);
+  color: #e8ecef;
+  font: 400 14px/1.6 var(--mono);
+  overflow-x: auto;
+}
+.article pre code { background: none; color: inherit; padding: 0; }
+
+.article hr {
+  margin: 32px 0;
+  border: none;
+  border-top: 1px solid var(--rule);
+}
+
+.article table {
+  margin: 24px 0 0;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 15px;
+}
+.article th {
+  font: 500 12.5px var(--mono);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--ink-faint);
+  border-bottom: 2px solid var(--ink);
+  padding: 8px 12px 8px 0;
+}
+.article td {
+  border-bottom: 1px solid var(--rule);
+  padding: 8px 12px 8px 0;
+}
+
+/* --- Figures: journal-style treatment for images ----------------------
+   In Markdown:  ![Fracture surface, 2000×](/img/fig1.jpg)
+   Or richer:    <figure><img …><figcaption>Fig. 1 — …</figcaption></figure> */
+
+.article img {
+  display: block;
+  max-width: 100%;
+  margin: 28px 0 0;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--rule);
+  padding: 16px 0;
+}
+
+.article figure { margin: 28px 0 0; }
+.article figure img { margin: 0; }
+.article figcaption {
+  margin-top: 8px;
+  font: 400 12.5px/1.6 var(--mono);
+  color: var(--ink-faint);
+}
+
+/* Specimen-record portrait (About page):
+   <img class="portrait" src="…" alt="Dr Richard Grainger">              */
+.article img.portrait,
+img.portrait {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  object-position: 50% 20%;
+  border: 1px solid var(--ink);
+  padding: 0;
+  float: left;
+  margin: 28px 32px 12px 0;
+}
+
+/* --- Footer ------------------------------------------------------------ */
+
+.site-footer {
+  margin-top: 64px;
+  border-top: 1px solid var(--rule);
+  padding: 20px 0 44px;
+}
+.site-footer p {
+  margin: 0;
+  font: 400 12.5px var(--mono);
+  color: var(--ink-faint);
+}
+.site-footer a { color: var(--ink-faint); text-decoration: underline; text-underline-offset: 3px; }
+.site-footer a:hover { color: var(--accent); }
+
+/* --- Small screens ------------------------------------------------------ */
+
+@media (max-width: 620px) {
+  body { font-size: 16px; padding: 0 18px; }
+
+  .site-header { grid-template-columns: 1fr; padding-top: 32px; }
+  .site-nav { grid-column: 1; grid-row: 3; margin-top: 18px; }
+
+  .article-list li { grid-template-columns: 1fr; row-gap: 4px; }
+  .article-list-date { grid-row: auto; padding-top: 0; }
+  .article-list-title { grid-column: 1; }
+  .article-list-summary { grid-column: 1; }
+
+  .article-header h1 { font-size: 25px; }
+
+  img.portrait { float: none; margin-right: 0; }
 }

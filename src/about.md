@@ -3,7 +3,7 @@ layout: base.njk
 title: About
 permalink: /about/
 ---
-<img class="portrait" src="/assets/photo.jpg">
+<img class="portrait" src="/assets/headshot.jpg" alt="Dr Richard Grainger">
 # About
 
 Dr Richard Grainger is a materials scientist working on inorganic-matrix
