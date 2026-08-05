@@ -1,0 +1,14 @@
+{
+  "name": "grainger-site",
+  "version": "1.0.0",
+  "description": "Personal site of Dr Richard Grainger — articles on inorganic-matrix composites",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

@@ -1,0 +1,31 @@
+# Rebuilds the site on a schedule, so future-dated articles appear
+# automatically once their publication date arrives.
+#
+# One-off setup (both dashboards, ~2 minutes):
+#   1. Cloudflare: your Pages project -> Settings -> Builds & deployments
+#      -> Deploy hooks -> create one (call it "scheduled-publish") and
+#      copy the URL it gives you.
+#   2. GitHub: this repo -> Settings -> Secrets and variables -> Actions
+#      -> New repository secret. Name: CLOUDFLARE_DEPLOY_HOOK
+#      Value: the URL from step 1.
+#
+# Until that secret exists this workflow runs and does nothing harmful.
+
+name: Scheduled rebuild
+
+on:
+  schedule:
+    # Mondays at 08:00 UTC. Cron format: minute hour day month weekday.
+    - cron: "0 8 * * 1"
+  # Also lets you trigger a rebuild manually from the Actions tab.
+  workflow_dispatch:
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    env:
+      HOOK: ${{ secrets.CLOUDFLARE_DEPLOY_HOOK }}
+    steps:
+      - name: Trigger Cloudflare Pages build
+        if: env.HOOK != ''
+        run: curl -s -X POST "$HOOK"

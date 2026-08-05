@@ -1,0 +1,206 @@
+/* ==========================================================================
+   VISUAL IDENTITY — edit this top block and the whole site follows.
+   Everything below the tokens is layout plumbing you can mostly ignore.
+   ========================================================================== */
+
+:root {
+  /* ---- Colour -------------------------------------------------------- */
+  --color-background: #fdfdfb;   /* page background */
+  --color-text:       #1c1c1c;   /* body text */
+  --color-muted:      #6b6b64;   /* dates, footer, secondary text */
+  --color-accent:     #305d74;   /* links, site name — your "brand" colour */
+  --color-accent-hover: #1e3d4e; /* links on hover */
+  --color-rule:       #e4e2da;   /* thin divider lines */
+
+  /* ---- Type ---------------------------------------------------------- */
+  /* Swap these stacks to change the feel of the whole site.
+     Serif reads "printed essay"; a sans stack reads more corporate. */
+  --font-body:    Charter, Georgia, "Times New Roman", serif;
+  --font-heading: Charter, Georgia, "Times New Roman", serif;
+  --font-size-base: 1.125rem;    /* body text size (18px) */
+  --line-height-base: 1.65;
+
+  /* ---- Layout -------------------------------------------------------- */
+  --measure: 42rem;              /* max text column width (~70 characters) */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 2rem;
+  --space-4: 3.5rem;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+* { box-sizing: border-box; }
+
+html {
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--color-text);
+  background: var(--color-background);
+}
+
+body {
+  margin: 0 auto;
+  padding: var(--space-3) var(--space-2) var(--space-4);
+  max-width: var(--measure);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  line-height: 1.25;
+  margin: var(--space-3) 0 var(--space-1);
+}
+
+h1 { font-size: 1.9rem; }
+h2 { font-size: 1.4rem; }
+h3 { font-size: 1.15rem; }
+
+a {
+  color: var(--color-accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:hover { color: var(--color-accent-hover); }
+
+blockquote {
+  margin: var(--space-2) 0;
+  padding-left: var(--space-2);
+  border-left: 3px solid var(--color-rule);
+  color: var(--color-muted);
+}
+
+code {
+  font-family: ui-monospace, "SF Mono", Consolas, monospace;
+  font-size: 0.9em;
+  background: rgba(0, 0, 0, 0.045);
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+}
+
+img { max-width: 100%; height: auto; }
+
+hr {
+  border: none;
+  border-top: 1px solid var(--color-rule);
+  margin: var(--space-3) 0;
+}
+
+/* ==========================================================================
+   Header / navigation
+   ========================================================================== */
+
+.site-header {
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--color-rule);
+}
+
+.site-name {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.site-name:hover { color: var(--color-accent); }
+
+.site-subtitle {
+  margin: 0.15rem 0 var(--space-1);
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+
+.site-nav { font-size: 0.95rem; }
+
+.site-nav a {
+  margin-right: var(--space-2);
+  color: var(--color-muted);
+  text-decoration: none;
+}
+
+.site-nav a:hover { color: var(--color-accent); }
+
+/* ==========================================================================
+   Homepage: intro + article list
+   ========================================================================== */
+
+.intro {
+  margin-bottom: var(--space-3);
+  font-size: 1.05em;
+}
+
+.article-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.article-list li {
+  margin-bottom: var(--space-3);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--color-rule);
+}
+
+.article-list li:last-child { border-bottom: none; }
+
+.article-list-title {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.article-list-date {
+  display: block;
+  margin-top: 0.2rem;
+  color: var(--color-muted);
+  font-size: 0.85rem;
+}
+
+.article-list-summary {
+  margin: var(--space-1) 0 0;
+  color: var(--color-text);
+}
+
+/* ==========================================================================
+   Article pages
+   ========================================================================== */
+
+.article-header { margin-bottom: var(--space-3); }
+
+.article-header h1 { margin-top: 0; }
+
+.article-meta {
+  margin: 0.3rem 0 0;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   Footer & utilities
+   ========================================================================== */
+
+.site-footer {
+  margin-top: var(--space-4);
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--color-rule);
+  color: var(--color-muted);
+  font-size: 0.85rem;
+}
+
+.site-footer a { color: var(--color-muted); }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
