@@ -5,12 +5,18 @@ summary: "My takeaway from Farnborough 2026. Where are the production ceramic co
 category: Perspective
 ---
 
-![F-35B Lightning II hovering in flight. UK MOD © Crown copyright 2021](/assets/f35.jpg)
-
 Standing on the grass at Farnborough airshow with a friend from the National Composites Centre, I watched an F-35 hover on its own exhaust. It is an astonishing thing to see. One of the most advanced aircraft ever built, hanging on a column of air, and yet the conversation between us was the same conversation composites engineers have been having for twenty years. Ceramic matrix composites are the future of the hot section. They were the future when I was a student. They were the future when my friend was a student. So why does it never quite arrive?
+
+![F-35B Lightning II hovering in flight. UK MOD © Crown copyright 2021](/assets/f35.jpg)
 
 I think I know why, and this essay is my attempt at an answer. Here is the thesis in one sentence: for twenty years the question was "how hot?" The next decade belongs to materials that are hot, light, and cheap. Two out of three will no longer be enough.
 Every engineer knows the old project-management triangle “good, fast, cheap; pick two”. Materials for hot structures obey their own version, and it is worth seeing clearly that every family we have is a corner-cutting compromise. Superalloys are hot and affordable, but heavy. Polymer composites are light and cheap, but melt. Ceramic matrix composites are hot and light, but priced like jewellery. The whole history of the field is a walk around the edges of this triangle, and the rest of this essay walks it deliberately: one corner at a time.
+
+<figure>
+  <img src="/assets/f35.jpg" alt="F-35B Lightning II hovering in flight">
+  <figcaption>F-35B Lightning II hovering in flight.</figcaption>
+  <small class="credit">Image UK MOD © Crown copyright 2021, used with permission</small>
+</figure>
 
 ## Hot: the corner we already conquered
 
