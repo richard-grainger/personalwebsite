@@ -7,12 +7,23 @@ category: Perspective
 
 Start with a simple piece of physics: when an aircraft pushes through air, the air piles up ahead of it and gets hot, and the heating grows roughly with the square of the speed. That square is a staircase, and each step up changes what the vehicle must be made of. At Mach 2, Concorde's nose reached about 127°C. Hot enough to stretch the airframe by a couple of hundred millimetres, cool enough for aluminium. At Mach 3, the SR-71 ran hundreds of degrees hotter and had to be built from titanium, with corrugated panels designed to expand and joints that famously wept fuel on the runway until the aircraft warmed up and sealed itself. And somewhere past Mach 4 or 5, the staircase leaves metal behind altogether. The air itself becomes a blowtorch; leading edges see well over 1000°C . A hypersonic vehicle is not an aircraft that happens to get hot. It is a thermal protection system with an engine.
 
+<figure>
+  <img src="/assets/blackbird.jpg" alt="Lockheed SR-71 Blackbird">
+  <figcaption>Lockheed SR-71 Blackbird.</figcaption>
+</figure>
+
 It is worth pausing to notice that the supersonic revival now underway sits comfortably on the lower steps. Boom Supersonic, a startup that has broken the industry's mould in the best way, flew its XB-1 demonstrator past Mach 1 last year, the first independently built civil jet ever to do so, and did it repeatedly without an audible boom reaching the ground. But notice what Boom's hardest problem turned out to be. It was not the shape of the aeroplane. It was that no established engine maker would build them an engine, so they are building their own, and their own factory to boot. Even at Mach 1.7, where aluminium and carbon fibre still apply, the gating challenge turned out to be industrial, not conceptual. Hold that thought, because it is the whole essay in miniature.
 
 ## The seduction of design
 
 Hypersonics has a public image, and the image is a rendering: a sleek black wedge, computational fluid dynamics in false colour, a waverider surfing its own shockwave. The imagery teaches people that this is a design problem; that somewhere there is a shape yet to be discovered, and the nation that computes it first wins.
 But we are not short of shapes, and we have not been for a long time. The X-15 flew at Mach 6.7 in 1967, well before the moon landing. The Space Shuttle re-entered at Mach 25 134 times across thirty years. The aerodynamics textbooks were written two generations ago, before modern computing. Designs for hypersonic aircraft exist in glorious abundance; they have existed for seventy years. If design were the bottleneck, we would be flying them.
+
+<figure>
+  <img src="/assets/darkhorse.jpg" alt="Hermeus's hypersonic uncrewed Darkhorse">
+  <figcaption>Hermeus's hypersonic uncrewed Darkhorse.</figcaption>
+  <small class="credit">Image Hermeus Corporation © copyright 2022</small>
+</figure>
 
 ## A sad proof
 
