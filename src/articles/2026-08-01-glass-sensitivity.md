@@ -1,7 +1,7 @@
 ---
 title: "Fibreglass chemical sensitivity"
 date: 2026-08-01
-summary: "The trouble with glass"
+summary: "How can glass beakers be used for the harshest chemical environments, but glass fibre cannot withstand acid or alkali?"
 category: Primer
 ---
 
