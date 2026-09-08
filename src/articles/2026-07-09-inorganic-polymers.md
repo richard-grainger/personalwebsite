@@ -22,6 +22,12 @@ For decades the two schools worked a continent and an ideology apart, and it too
 
 The reaction is easier to picture than to pronounce. Start with a fine aluminosilicate flour like calcined clay (metakaolin), fly ash from power stations, or ground furnace slag. Stir it into a fiercely alkaline liquid, typically sodium or potassium silicate. The alkali is a demolition crew: it strips silicon and aluminium atoms out of the powder and sets them loose in solution. Floating free, these fragments find one another and click back together; first into small clusters, then into an endless three-dimensional network of silicon–oxygen–aluminium bonds, with the sodium or potassium tucked into the gaps to balance the books.
 
+<figure>
+  <img src="/assets/geopolymer.jpg" alt="HTMS geopolymer">
+  <figcaption>Mechanical test specimen of HTMS-manufactured geopolymer</figcaption>
+  <small class="credit">Image © HTMS Composites copyright 2026, used with permission</small>
+</figure>
+
 You have dissolved a rock and let it reassemble as a different rock; one shaped like your mould. No kiln, no clinker, no thousand-degree firing. The whole thing happens at temperatures a domestic oven considers a warm afternoon, and the product doesn't burn, because there is no carbon in it to burn.
 
 ## So where are the prepregs?
