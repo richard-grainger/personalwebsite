@@ -1,4 +1,4 @@
-\---
+---
 
 title: "The Interphase is Everything"
 date: 2026-09-22
@@ -6,7 +6,6 @@ summary: "The weakness that holds everything together; why the Fibre-Matrix inte
 category: Primer
 ---
 
-# 
 
 Last time I told you the secret of ceramic matrix composites: they are tough because part of them is deliberately weak. The boundary between fibre and matrix is engineered to fail, so cracks turn sideways and exhaust themselves instead of running clean through. But I left out the awkward question: how weak, exactly?
 Because there is a Goldilocks window here, and it is narrow. Bond the fibres too strongly and the crack doesn't bother turning; it cuts straight through fibre and matrix alike, and you have built an expensive teacup. Bond them too weakly and the fibres slide about uselessly in their sockets, carrying no load, and you have built a rope of loose strands wearing a ceramic coat. Everything interesting happens in the strip between those failures, and hitting it on purpose is the real art of the CMC.
