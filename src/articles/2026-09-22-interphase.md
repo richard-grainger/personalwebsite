@@ -1,18 +1,20 @@
----
+\---
+
 title: "The Interphase is Everything"
 date: 2026-09-22
 summary: "The weakness that holds everything together; why the Fibre-Matrix interface is everything"
 category: Primer
 ---
 
-# The Interphase is everything
+# 
 
 Last time I told you the secret of ceramic matrix composites: they are tough because part of them is deliberately weak. The boundary between fibre and matrix is engineered to fail, so cracks turn sideways and exhaust themselves instead of running clean through. But I left out the awkward question: how weak, exactly?
-Because there is a Goldilocks window here, and it is narrow. Bond the fibres too strongly and the crack doesn't bother turning; it cuts straight through fibre and matrix alike, and you have built an expensive teacup. Bond them too weakly and the fibres slide about uselessly in their sockets, carrying no load, and you have built a rope of loose strands wearing a ceramic coat. Everything interesting happens in the strip between those failures, and hitting it on purpose is the real art of the CMC. 
+Because there is a Goldilocks window here, and it is narrow. Bond the fibres too strongly and the crack doesn't bother turning; it cuts straight through fibre and matrix alike, and you have built an expensive teacup. Bond them too weakly and the fibres slide about uselessly in their sockets, carrying no load, and you have built a rope of loose strands wearing a ceramic coat. Everything interesting happens in the strip between those failures, and hitting it on purpose is the real art of the CMC.
+
 
 
 <figure>
-  <img src="/assets/interphase.jpg" alt="Fibre pull-out in a composite surface">
+  <img src="/assets/interphase.png" alt="Fibre pull-out in a composite surface">
   <figcaption>Fibre pull-out in a well-balanced interphase.</figcaption>
 </figure>
 
@@ -43,3 +45,4 @@ So the oxide camp did something braver: they abandoned the interphase altogether
 ## Two tribes
 
 And that is where the family splits. Non-oxide CMCs: strong matrix, engineered interphase, the highest performance we know how to make, and an eternal war with oxygen. Oxide CMCs: weak matrix, no interphase at all, utterly indifferent to hot air, and a lower ceiling. Neither is better; they are two answers to the same Goldilocks question, which is why a turbine's innards and an exhaust structure make different choices. And it is the first question any new matrix must answer (including the inorganic polymer matrices) nevermind the chemistry, what do you do at the fibre surface?
+
