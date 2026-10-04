@@ -13,8 +13,8 @@ Because there is a Goldilocks window here, and it is narrow. Bond the fibres too
 
 
 <figure>
-  <img src="/assets/interphase.png" alt="Fibre pull-out in a composite surface">
-  <figcaption>Fibre pull-out in a well-balanced interphase.</figcaption>
+  <img src="/assets/interphase.jpg" alt="Fibre pull-out in a composite surface">
+  <figcaption>Fibres embedded in a ceramic matrix.</figcaption>
 </figure>
 
 ## A thing, not a place
