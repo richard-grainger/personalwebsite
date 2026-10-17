@@ -1,7 +1,7 @@
 ---
 title: "Affordable Mass"
 date: 2026-10-10
-summary: "What happens to a materials engineer's approach when the component is designed to be lost."
+summary: "What happens to a materials engineer's approach when the component is designed to be lost?"
 category: Perspective
 ---
 
