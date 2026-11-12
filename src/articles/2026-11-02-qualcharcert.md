@@ -19,6 +19,12 @@ The thing to hold on to is that characterisation describes the samples you teste
 
 ## Qualification
 
+
+<figure>
+  <img src="/assets/coupons.jpg" alt="Batches of test coupons">
+  <figcaption>A suite of carbon fibre test coupons. Each break is different, and the strengths between batches matter.</figcaption>
+</figure>
+
 Qualification is proving that the material is the same every time. It takes the characterisation numbers and asks whether they survive contact with different batches of raw material, different operators, different days, different humidity, and the slow drift of every machine on the line. For a structural aerospace material that means testing several batches, all made to a fixed process specification, enough times that the statistics can tell you the strength you can actually rely on rather than the average. That design value is always lower than the headline number, sometimes a lot lower, and I went through why in Show Me the Scatter.
 
 The specification is the heart of it. Once a material is qualified the recipe and the process are fixed, and changing the supplier of one raw material, or the temperature of one oven, can mean repeating a good part of the work. So qualification is as much a claim about the factory as it is about the chemistry. Repeatability is a measurement claim before it is a materials claim, and you cannot qualify what you cannot measure on the line.
