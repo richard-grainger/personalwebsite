@@ -311,7 +311,7 @@ img.portrait {
   width: 200px;
   height: 250px;
   object-fit: cover;
-  object-position: 50% 20%;
+  object-position: 50% 50%;
   border: 1px solid var(--ink);
   padding: 0;
   float: left;
