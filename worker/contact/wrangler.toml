@@ -1,0 +1,17 @@
+name = "rg-contact"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+
+# Runs on the same domain as the site, so the form posts to /api/contact
+routes = [
+  { pattern = "richard-grainger.co.uk/api/contact", zone_name = "richard-grainger.co.uk" },
+  { pattern = "www.richard-grainger.co.uk/api/contact", zone_name = "richard-grainger.co.uk" },
+]
+
+# Can only ever send to this one verified address
+[[send_email]]
+name = "EMAIL"
+destination_address = "rich.v.grainger@gmail.com"
+
+[observability]
+enabled = true
