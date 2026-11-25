@@ -1,7 +1,7 @@
 ---
 title: "Britain's High-Temperature Materials Gap"
 date: 2026-09-03
-summary: "The UK has a genuine chance to lead European supply chains in CMCs within five to ten years, so why dont we?"
+summary: "The UK has a genuine chance to lead European supply chains in CMCs within five to ten years, so why don't we?"
 category: Perspective
 ---
 
