@@ -1,0 +1,33 @@
+---
+layout: base.njk
+title: Library
+permalink: /library/
+---
+<section class="library">
+  <header class="library-intro">
+    <h1>Library</h1>
+    <p class="library-lede">{{ site.libraryLede }}</p>
+  </header>
+
+  <div class="shelf" aria-hidden="true">
+    {% for book in library %}
+    <a class="spine" href="#{{ book.slug }}" tabindex="-1"
+       style="--c: {{ book.colour }}; --h: {{ [86, 94, 80, 98, 90, 84][loop.index0 % 6] }}%; --w: {{ [46, 40, 52, 44, 48, 42][loop.index0 % 6] }}px">
+      <span class="spine-title">{{ book.title }}</span>
+      <span class="spine-author">{{ book.author | replace(" & ", " · ") }}</span>
+    </a>
+    {% endfor %}
+    <span class="bookend"></span>
+  </div>
+
+  <ul class="books">
+    {% for book in library %}
+    <li class="book" id="{{ book.slug }}" style="--c: {{ book.colour }}">
+      <h2 class="book-title">{{ book.title }}</h2>
+      {% if book.subtitle %}<p class="book-subtitle">{{ book.subtitle }}</p>{% endif %}
+      <p class="book-author">{{ book.author }} · {{ book.year }}</p>
+      <p class="book-note">{{ book.note }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

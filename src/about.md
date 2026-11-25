@@ -35,6 +35,8 @@ HTMS was born from a gap I kept running into: there was no high-quality UK or Eu
 My path into materials science started with badminton, not a lab. A schoolboy fascination with the carbon fibre in my racket led to a degree and then a PhD at the <a href="https://www.sheffield.ac.uk">University of Sheffield</a> on self-healing, self-sensing carbon fibre composites: materials that repair their own micro-cracks.
 
 I'm a Chartered Engineer, and I've always been drawn to the places where disciplines meet. Chemistry, physics, maths and biology all sit inside a single composite material, and I've spent my career finding the connections between them.
+
+My professional record is on <a href="{{ site.orcid }}">ORCID</a>, and if you want to know what shaped my thinking, there's a short <a href="/library/">library</a> of the books I recommend most.
 </section>
 
 {% if site.turnstileSiteKey %}
