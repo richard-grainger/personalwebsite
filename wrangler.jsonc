@@ -1,0 +1,11 @@
+// Cloudflare config for the website itself (the contact form Worker has
+// its own config in worker/contact/). Tells Cloudflare to serve the built
+// site in _site/. Needed so branch builds can upload a test version.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "personalwebsite",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./_site"
+  }
+}

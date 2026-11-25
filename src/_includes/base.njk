@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en-GB">
 <head>
+  {%- set u = page.url or "" -%}
+  {%- set isArticle = u.indexOf("/articles/") == 0 -%}
+  {%- set ogImage = site.url + ("/assets/og/" + page.fileSlug + ".png" if isArticle else "/assets/og-card.png") -%}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if title %}{{ title }} · {{ site.name }}{% else %}{{ site.title }}{% endif %}</title>
@@ -8,11 +11,12 @@
   <meta name="author" content="{{ site.author }}">
   <meta property="og:title" content="{{ title or site.title }}">
   <meta property="og:description" content="{{ summary or site.description }}">
-  <meta property="og:image" content="https://richard-grainger.co.uk/assets/og-card.png">
+  <meta property="og:image" content="{{ ogImage }}">
+  <meta name="twitter:image" content="{{ ogImage }}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Dr Richard Grainger: writing on ceramics, composites and the long road from lab bench to flight.">
-  <meta property="og:type" content="{% if layout == 'article.njk' %}article{% else %}website{% endif %}">
+  <meta property="og:image:alt" content="{% if isArticle %}{{ title }}: {{ summary }}{% else %}Dr Richard Grainger: writing on ceramics, composites and the long road from lab bench to flight.{% endif %}">
+  <meta property="og:type" content="{% if isArticle %}article{% else %}website{% endif %}">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
@@ -26,7 +30,6 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/feed.xml">
 </head>
 <body>
-  {% set u = page.url or "" %}
   <header class="site-header">
     <a class="site-name" href="/"><span class="site-mark" aria-hidden="true">RG</span><span class="site-name-text">{{ site.name }}</span></a>
     <nav class="site-nav" aria-label="Main">
