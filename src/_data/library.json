@@ -1,0 +1,55 @@
+[
+  {
+    "slug": "power-of-2",
+    "title": "Power of 2",
+    "subtitle": "How to Make the Most of Your Partnerships at Work and in Life",
+    "author": "Rodd Wagner & Gale Muller",
+    "year": 2009,
+    "colour": "#34506b",
+    "note": "On the importance of having a counterweight when you're developing something difficult, whether that's a business or a new technology."
+  },
+  {
+    "slug": "handmade",
+    "title": "Handmade",
+    "subtitle": "A Scientist's Search for Meaning through Making",
+    "author": "Anna Ploszajski",
+    "year": 2021,
+    "colour": "#a8462a",
+    "note": "A journey through materials by way of the craft of making them. A materials engineer's job is often translating an idea between the computer and reality, and this book really brings that home."
+  },
+  {
+    "slug": "plutos-republic",
+    "title": "Pluto's Republic",
+    "author": "Peter Medawar",
+    "year": 1982,
+    "colour": "#5b5a33",
+    "note": "A collection of essays that gave me a real scepticism of systems and bureaucracies: a group of clever people can do stupid things through no individual's fault."
+  },
+  {
+    "slug": "rebel-ideas",
+    "title": "Rebel Ideas",
+    "subtitle": "The Power of Diverse Thinking",
+    "author": "Matthew Syed",
+    "year": 2019,
+    "colour": "#b5843a",
+    "note": "Why diversity of thought is critical to solving hard problems."
+  },
+  {
+    "slug": "what-money-cant-buy",
+    "title": "What Money Can't Buy",
+    "subtitle": "The Moral Limits of Markets",
+    "author": "Michael Sandel",
+    "year": 2012,
+    "colour": "#3f6b66",
+    "note": "How money can crowd out norms that used to matter more, and why you should be careful when you change the way people see something."
+  },
+  {
+    "slug": "incognito",
+    "title": "Incognito",
+    "subtitle": "The Secret Lives of the Brain",
+    "author": "David Eagleman",
+    "year": 2011,
+    "colour": "#4a4552",
+    "note": "I'm fascinated by how the brain solves problems, and this book taught me that most of our behaviour is driven by the unconscious mind."
+  }
+]
