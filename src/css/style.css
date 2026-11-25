@@ -438,10 +438,11 @@ img.portrait {
   background: var(--c);
   border-radius: 3px 3px 0 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 14px 0 12px;
+  flex-direction: column;   /* in vertical text: lines sit side by side */
+  align-items: center;      /* centre each line along the spine */
+  justify-content: center;  /* keep title and author together */
+  gap: 3px;
+  padding: 12px 0;
   writing-mode: vertical-rl;
   color: rgba(255, 255, 255, 0.92);
   text-decoration: none;
@@ -458,8 +459,8 @@ img.portrait {
   align-self: flex-end;
 }
 .spine:hover { transform: translateY(-8px); }
-.spine-title { font: 500 15px/1 var(--serif); white-space: nowrap; }
-.spine-author { font: 400 9.5px/1 var(--mono); letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.8; white-space: nowrap; }
+.spine-title { font: 500 15px/1.1 var(--serif); white-space: nowrap; text-align: center; }
+.spine-author { text-align: center; font: 400 9.5px/1.1 var(--mono); letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.8; white-space: nowrap; }
 
 .books {
   list-style: none;
