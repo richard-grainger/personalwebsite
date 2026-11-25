@@ -1,13 +1,37 @@
 ---
 layout: base.njk
 ---
+{% set shareUrl = site.url + page.url %}
 <article class="article">
   <header class="article-header">
-    <h1>{{ title }}</h1>
     <p class="article-meta">
+      {% if category %}<span class="tag tag-{{ category | slugify }}">{{ category }}</span>{% endif %}
       <time datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time>
     </p>
+    <h1>{{ title }}</h1>
+    {% if summary %}<p class="article-standfirst">{{ summary }}</p>{% endif %}
   </header>
 
-  {{ content | safe }}
+  <div class="article-body">
+    {{ content | safe }}
+  </div>
+
+  <footer class="article-footer">
+    <p class="share">
+      <span class="share-label">Share</span>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ shareUrl | urlencode }}" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://x.com/intent/post?url={{ shareUrl | urlencode }}&amp;text={{ title | urlencode }}" target="_blank" rel="noopener">X</a>
+      <a href="mailto:?subject={{ title | urlencode }}&amp;body={{ shareUrl | urlencode }}">Email</a>
+      <button type="button" class="share-copy" data-url="{{ shareUrl }}">Copy link</button>
+    </p>
+    <p class="article-next"><a href="/">&larr; All writing</a> <span aria-hidden="true">·</span> <a href="/about/#contact">Get in touch</a></p>
+  </footer>
 </article>
+<script>
+  document.querySelector(".share-copy")?.addEventListener("click", async (e) => {
+    const b = e.currentTarget;
+    try { await navigator.clipboard.writeText(b.dataset.url); b.textContent = "Link copied"; }
+    catch { b.textContent = b.dataset.url; }
+    setTimeout(() => (b.textContent = "Copy link"), 2500);
+  });
+</script>
