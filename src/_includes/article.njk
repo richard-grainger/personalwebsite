@@ -12,6 +12,13 @@ layout: base.njk
     {% if summary %}<p class="article-standfirst">{{ summary }}</p>{% endif %}
   </header>
 
+  <nav class="toc" aria-label="Contents" hidden>
+    <div class="toc-inner">
+      <p class="toc-label">Contents</p>
+      <ol></ol>
+    </div>
+  </nav>
+
   <div class="article-body">
     {{ content | safe }}
   </div>
@@ -28,6 +35,35 @@ layout: base.njk
   </footer>
 </article>
 <script>
+  // Margin contents list: built from the article's section headings.
+  // Only shown for articles with 3+ sections, and only on wide screens (CSS).
+  (function () {
+    const nav = document.querySelector(".toc");
+    const heads = [...document.querySelectorAll(".article-body h2")];
+    if (!nav || heads.length < 3) return;
+    const list = nav.querySelector("ol");
+    const links = heads.map((h, i) => {
+      if (!h.id) h.id = h.textContent.toLowerCase().trim().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "") || "section-" + (i + 1);
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      a.href = "#" + h.id;
+      a.textContent = h.textContent;
+      li.append(a);
+      list.append(li);
+      return a;
+    });
+    nav.hidden = false;
+    // Highlight the section currently being read
+    const update = () => {
+      let current = 0;
+      heads.forEach((h, i) => { if (h.getBoundingClientRect().top < window.innerHeight * 0.35) current = i; });
+      links.forEach((a, i) => a.classList.toggle("is-current", i === current));
+    };
+    addEventListener("scroll", update, { passive: true });
+    addEventListener("resize", update);
+    update();
+  })();
+
   document.querySelector(".share-copy")?.addEventListener("click", async (e) => {
     const b = e.currentTarget;
     try { await navigator.clipboard.writeText(b.dataset.url); b.textContent = "Link copied"; }
