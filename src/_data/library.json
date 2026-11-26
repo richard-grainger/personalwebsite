@@ -26,6 +26,14 @@
     "note": "A collection of essays that gave me a real scepticism of systems and bureaucracies: a group of clever people can do stupid things through no individual's fault."
   },
   {
+    "slug": "art-of-the-soluble",
+    "title": "The Art of the Soluble",
+    "author": "Peter Medawar",
+    "year": 1967,
+    "colour": "#6b3f5a",
+    "note": "Knowing which problem to solve is as important as solving it. Medawar really shaped my thinking that a good scientist knows where to spend their efforts. My copy is the one collected in Pluto's Republic."
+  },
+  {
     "slug": "rebel-ideas",
     "title": "Rebel Ideas",
     "subtitle": "The Power of Diverse Thinking",
@@ -51,5 +59,39 @@
     "year": 2011,
     "colour": "#4a4552",
     "note": "I'm fascinated by how the brain solves problems, and this book taught me that most of our behaviour is driven by the unconscious mind."
+  },
+  {
+    "slug": "success-through-failure",
+    "title": "Success through Failure",
+    "subtitle": "The Paradox of Design",
+    "author": "Henry Petroski",
+    "year": 2006,
+    "colour": "#2f5d50",
+    "note": "This book taught me that design is Janus-faced, always looking both backwards and forwards: designers must learn from past mistakes while planning future projects. History holds failures driven by ignorance, overconfidence and hubris."
+  },
+  {
+    "slug": "social-control-of-technology",
+    "title": "The Social Control of Technology",
+    "author": "David Collingridge",
+    "year": 1980,
+    "colour": "#3a4a6b",
+    "note": "The basis for several of my articles. Collingridge examines why societies struggle to steer emerging technologies before their harmful effects develop."
+  },
+  {
+    "slug": "made-you-angry-earlier",
+    "title": "I Wish I'd Made You Angry Earlier",
+    "subtitle": "Essays on Science, Scientists, and Humanity",
+    "author": "Max Perutz",
+    "year": 1998,
+    "colour": "#7a5a3a",
+    "note": "An interesting walk through scientific discovery: sometimes an emotional reaction can trigger the focus needed for a solution. It's also where I learnt about Project Habbakuk."
+  },
+  {
+    "slug": "cathedral-and-bazaar",
+    "title": "The Cathedral and the Bazaar",
+    "author": "Eric S. Raymond",
+    "year": 1999,
+    "colour": "#7d3a36",
+    "note": "Top-down versus bottom-up approaches to software development apply to scientific discovery too. I use that as a key theme in my essays, and this is where the ideas started."
   }
 ]
