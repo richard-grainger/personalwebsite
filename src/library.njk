@@ -3,6 +3,9 @@ layout: base.njk
 title: Library
 permalink: /library/
 ---
+{#- Spine size: set "height" (percent of shelf, about 80 to 99) and/or
+    "width" (pixels, about 40 to 70) on a book in library.json to override
+    the automatic pattern. -#}
 <section class="library">
   <header class="library-intro">
     <h1>Library</h1>
@@ -12,7 +15,7 @@ permalink: /library/
   <div class="shelf" aria-hidden="true">
     {% for book in library %}
     <a class="spine" href="#{{ book.slug }}" tabindex="-1"
-       style="--c: {{ book.colour }}; --h: {{ 97 if book.title.length > 20 else [86, 94, 80, 98, 90, 84][loop.index0 % 6] }}%; --w: {{ [46, 40, 52, 44, 48, 42][loop.index0 % 6] + (18 if book.title.length > 20 else 0) }}px">
+       style="--c: {{ book.colour }}; --h: {{ book.height or ([91, 98, 88, 95][loop.index0 % 4] if book.title.length > 20 else [86, 94, 80, 98, 90, 84][loop.index0 % 6]) }}%; --w: {{ book.width or ([46, 40, 52, 44, 48, 42][loop.index0 % 6] + (18 if book.title.length > 20 else 0)) }}px">
       <span class="spine-title">{{ book.title }}</span>
       <span class="spine-author">{{ book.author | replace(" & ", " · ") }}</span>
     </a>
